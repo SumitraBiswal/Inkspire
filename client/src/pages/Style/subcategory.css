@@ -1,0 +1,105 @@
+
+.subcat-section {
+  margin: 25px 0;
+  padding: 12px 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.subcat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.subcat-header h2 {
+  font-size: 22px;
+  color: #212121;
+  font-weight: 600;
+}
+
+.more-btn {
+  background: #2874f0;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.more-btn:hover {
+  background: #1a5fc9;
+}
+
+
+.subcat-row {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.subcat-row::-webkit-scrollbar {
+  display: none;
+}
+
+
+.book-card {
+  min-width: 140px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-card img {
+  width: 140px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.book-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+
+.subcat-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 18px;
+}
+
+
+@media (max-width: 480px) {
+  .subcat-header h2 {
+    font-size: 18px;
+  }
+
+  .book-card {
+    min-width: 120px;
+  }
+
+  .book-card img {
+    width: 120px;
+    height: 165px;
+  }
+
+  .subcat-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

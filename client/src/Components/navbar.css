@@ -1,0 +1,158 @@
+.navbar {
+  background-color: #0a3d91; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo a {
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid white;
+}
+
+/* Right Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+/* Search Box */
+.search-container {
+  position: relative;
+}
+
+.search-box {
+  position: absolute;
+  right: 40px;
+  top: -5px;
+  background: white;
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 4px;
+}
+
+.search-box button {
+  padding: 6px;
+  background-color: #0a3d91;
+  color:  #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Suggestions */
+.suggestions {
+  background: #000000;
+  border-radius: 4px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions li {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #1f0589;
+}
+
+/* User Initial */
+.user-initial {
+  background: #fff;
+  color: #e1770d;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Icons */
+.icon {
+
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* 🔹 Bottom Navbar */
+.bottom-navbar {
+  background-color: #0a3d91;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.bottom-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-icon span {
+  font-size: 12px;
+}
+
+/* Active NavLink style */
+.bottom-icon.active {
+  color: #ffda00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .bottom-navbar {
+    display: flex;
+  }
+}

@@ -1,0 +1,287 @@
+
+.home-user {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0e159a;
+  margin: 20px 0 10px 20px;
+}
+
+
+.home-search-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f0f5ff;
+  border: 2px solid #0e159a;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.search-bar:focus-within {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-icon {
+  font-size: 22px;
+  color: #054dc1;
+  margin-right: 12px;
+}
+
+/* 🔹 Suggestion Box */
+.suggestion-box {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  max-height: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.suggestion-item:hover {
+  background: #f7faff;
+}
+
+.suggestion-item img {
+  width: 55px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.suggestion-item .info h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.suggestion-item .info .rating {
+  font-size: 13px;
+  color: #ff9f00;
+}
+
+.no-result {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+/* 🔹 Banner Slider */
+.slider-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #0e159a;
+}
+
+/* 🔹 Subcategory Section */
+.subcategory-section {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+/* Alternate Themes */
+.subcat-section.blue {
+  background: #e7f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.subcat-section.orange {
+  background: #fff4e5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Header */
+.subcat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subcat-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0e159a;
+}
+
+.more-btn {
+  background: transparent;
+  border: none;
+  color: #0e159a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.more-btn:hover {
+  color: #054dc1;
+}
+
+/* Horizontal scroll row */
+.subcat-row.scroll-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 5px;
+  scrollbar-width: thin;
+}
+
+.subcat-row.scroll-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.subcat-row.scroll-row::-webkit-scrollbar-thumb {
+  background: #0e159a;
+  border-radius: 3px;
+}
+
+/* Grid row for "More" */
+.subcat-row.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+/* Book Card */
+.book-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 10px;
+}
+
+.book-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.book-card p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.book-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .slider-item img {
+    height: 250px;
+  }
+  .book-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    padding: 10px 12px;
+  }
+  .home-user {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .slider-item img {
+    height: 200px;
+  }
+  .book-card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar input {
+    font-size: 14px;
+  }
+  .home-user {
+    font-size: 20px;
+  }
+  .book-card img {
+    height: 120px;
+  }
+  .subcat-header h2 {
+    font-size: 18px;
+  }
+}

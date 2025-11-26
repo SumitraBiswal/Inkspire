@@ -1,0 +1,97 @@
+
+.get-container {
+  height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 31, 77, 0.8)),
+    url("../Booklogo/forscroller.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  
+  background-blend-mode: overlay;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: left top;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+
+.main-title {
+  font-size: 2.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #4169e3;
+
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  color: #f0f8ff;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #d8e6ff;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+
+.log-btn {
+  background: linear-gradient(90deg, #6178fb, #001eff);
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(97, 218, 251, 0.6);
+  transition: all 0.4s ease;
+}
+
+.log-btn:hover {
+  background: linear-gradient(90deg, #007bff, #61dafb);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(97, 218, 251, 0.8);
+}
+
+/* Signup text and link */
+.signup-text {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.signup-link {
+  color: #33a6ee;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: #00c8ff;
+  text-decoration: underline;
+}

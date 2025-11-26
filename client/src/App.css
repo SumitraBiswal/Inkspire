@@ -1,0 +1,17 @@
+
+
+
+html,body,#root{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.background{
+   min-height : 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,#809ed1 0% ,#cad6f1 40%, #ffff 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
