@@ -1,0 +1,185 @@
+/* MAIN PAGE */
+.address-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+}
+
+/* Title */
+.address-page h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+/* ADDRESS CARD – modern colorful edge */
+.address-card {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+
+  /* Modern Gradient Shadow */
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.15);
+
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.address-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 102, 255, 0.25);
+}
+
+/* Radio */
+.address-card input[type="radio"] {
+  margin-top: 5px;
+  transform: scale(1.4);
+  accent-color: #0066ff;
+}
+
+/* Name */
+.address-card h4 {
+  font-size: 19px;
+  color: #222;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Address text */
+.address-card p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ADD NEW ADDRESS BUTTON – gradient colorful */
+.add-address-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #0066ff, #00c2ff);
+  color: white;
+  padding: 14px;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 18px 0;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.add-address-btn:hover {
+  background: linear-gradient(135deg, #0053cc, #022295);
+}
+
+/* ADDRESS FORM */
+.address-form {
+  padding: 20px;
+  border-radius: 14px;
+  background: #f8fbff;
+  box-shadow: 0 6px 18px rgba(0, 102, 255, 0.12);
+  margin-bottom: 20px;
+}
+
+.address-form h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.address-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d7e7ff;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.address-form input:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 6px rgba(0, 102, 255, 0.35);
+}
+
+/* GPS Button – colorful outline */
+.gps-btn {
+  padding: 8px 16px;
+  background: #e8f2ff;
+  color: #012863;
+  border: 2px solid #0066ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+  transition: 0.25s;
+}
+
+.gps-btn:hover {
+  background: #d6e9ff;
+}
+
+/* Save Button (Blue) */
+.save-btn {
+  background: #0f4e07;
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+  border: none;
+}
+
+.save-btn:hover {
+  background: #0053cc;
+}
+
+/* Continue Button – Orange Vibrant */
+.continue-btn {
+  width: 100%;
+  padding: 15px;
+  background: orangered;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.continue-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #e76a00, #ff8200);
+}
+
+.continue-btn:disabled {
+  background: #722c07;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    .address-page{
+        padding-bottom: 60px;
+    }
+  .address-card {
+    flex-direction: row;
+   
+  }
+ 
+
+  .add-address-btn,
+  .continue-btn {
+    font-size: 15px;
+  }
+}

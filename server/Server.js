@@ -8,6 +8,8 @@ import userRouter from "./routes/userRouter.js";
 import cartRouter from "./routes/cartRouter.js";
 import wishlistRouter from "./routes/wishlistRouter.js";
 import BookRouter from "./routes/bookRouter.js";
+import orderRouter from "./routes/orderRouter.js";
+import addressRouter from "./routes/addressRouter.js";
 
 
 const app = express();
@@ -30,5 +32,7 @@ app.use('/api/user',userRouter);
 app.use('/api/cart',cartRouter);
 app.use('/api/wishlist',wishlistRouter);
 app.use('/api/books',BookRouter);
+app.use('/api/order',orderRouter);
+app.use('/api/address',addressRouter);
 
 app.listen(port, ()=> console.log(`Server Started On PORT:${port}`));

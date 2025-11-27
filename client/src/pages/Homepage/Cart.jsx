@@ -3,8 +3,13 @@ import { useCart } from "../../Context/CartContext.jsx";
 import "../Style/Cart.css";
 import { FaTrashAlt } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate= useNavigate();
+  
+   
+ 
   const {
     cart: { items: cartItems, totalQuantity, totalPrice },
     updateCartItem,
@@ -14,7 +19,7 @@ const Cart = () => {
 
   // Handle quantity change
   const handleQuantityChange = (bookId, newQuantity) => {
-    updateCartItem(bookId, newQuantity); // backend removes if quantity <= 0
+    updateCartItem(bookId, newQuantity); 
   };
 
   if (!cartItems || cartItems.length === 0) {
@@ -25,7 +30,7 @@ const Cart = () => {
       </div>
     );
   }
-
+  
   return (
     <div className="cart-wrapper">
       <div className="cart-left">
@@ -130,7 +135,7 @@ const Cart = () => {
             <span>₹{totalPrice}</span>
           </div>
 
-          <button className="place-order-btn">Place Order</button>
+          <button className="place-order-btn" onClick={()=>navigate("/address")}>Place Order</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,145 @@
+.order-page {
+  padding: 20px;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+.order-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: white;
+}
+
+.active-status {
+  background: #4caf50;
+}
+
+.cancel-status {
+  background: #f44336;
+}
+
+.order-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.items-box {
+  background: #f3f4f8;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.item-row:last-child {
+  border-bottom: none;
+}
+
+.address-box {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.order-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #155a9a;
+}
+
+.cancel-btn {
+  background: #e53935;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c62828;
+}
+
+.no-orders {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}

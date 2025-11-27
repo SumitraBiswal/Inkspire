@@ -20,6 +20,11 @@ import Wishlist from './pages/Homepage/Wishlist';
 import EditProfile from './pages/Homepage/EditProfile';
 import Categoriespage from './pages/Homepage/Categoriespage';
 import BackButton from './Components/BackButton';
+import Address from './pages/Homepage/address';
+import Payment from './pages/Homepage/Payment';
+import OrderList from './pages/Homepage/OrderList';
+import OrderDetails from './pages/Homepage/OrderDetails';
+
 
 
 
@@ -48,12 +53,19 @@ const {user} = useAuth();
         <Route path='/reset-password' element={<ResetPassword />}/>
         <Route path='/verify-email' element={<EmailVerify />}/>
         <Route path='/book/:id' element={<BookProfile />}/>
-         <Route path='/profile' element={<Profile />}/>
-          <Route path='/library' element={<Library />}/>
-           <Route path='/cart' element={<Cart/>}/>
-            <Route path='/wishlist/' element={<Wishlist />}/>
-             <Route path='/edit-profile' element={<EditProfile />}/>
-              <Route path='/categories' element={<Categoriespage />}/>
+        <Route path='/profile' element={<Profile />}/>
+        <Route path='/library' element={<Library />}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/wishlist/' element={<Wishlist />}/>
+        <Route path='/edit-profile' element={<EditProfile />}/>
+        <Route path='/categories' element={<Categoriespage />}/>
+         <Route path='/address' element={<Address/>}/>
+         <Route path='/payment' element={<Payment/>}/>
+         <Route path='/orders/' element={<OrderList/>}/>
+         <Route path='/order/:id' element={<OrderDetails/>}/>
+
+          
+
       </Routes>
     </div>
     </>

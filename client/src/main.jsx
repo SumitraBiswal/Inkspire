@@ -10,6 +10,7 @@ import { AuthProvider } from './Context/Authcontext.jsx'
 
 import { WishlistProvider } from './Context/WishlistContext.jsx'
 import CartProvider from './Context/CartContext.jsx'
+import { OrderProvider } from './Context/OrderContext.jsx'
 
 
 
@@ -20,8 +21,10 @@ createRoot(document.getElementById('root')).render(
     <AuthProvider>
       <CartProvider>
         <WishlistProvider>
-           <App/>
+          <OrderProvider>
+                 <App/>
              <ToastContainer position ="top-center" autoClose={2000} theme='colored'/>
+          </OrderProvider>
         </WishlistProvider>
       </CartProvider>
           

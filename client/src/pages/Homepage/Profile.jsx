@@ -1,8 +1,7 @@
-
 import React from "react";
-
 import { useCart } from "../../Context/CartContext.jsx";
 import { useWishlist } from "../../Context/WishlistContext.jsx";
+import { useOrder } from "../../Context/OrderContext.jsx"; // <-- import OrderContext
 import { useNavigate } from "react-router-dom";
 import "../Style/Profile.css";
 import { useAuth } from "../../Context/Authcontext.jsx";
@@ -11,6 +10,7 @@ const Profile = () => {
   const { user, logout } = useAuth();
   const { cart } = useCart();
   const { wishlist } = useWishlist();
+  const { orders } = useOrder(); // <-- get orders
   const navigate = useNavigate();
 
   if (!user) {
@@ -44,7 +44,10 @@ const Profile = () => {
           My Wishlist ({wishlist.length})
         </button>
         <button onClick={() => navigate("/cart")} className="profile-btn">
-          My Cart ({cart.items?.length||0})
+          My Cart ({cart.items?.length || 0})
+        </button>
+        <button onClick={() => navigate("/orders")} className="profile-btn">
+          My Orders ({orders.length})
         </button>
         <button onClick={logout} className="logout-btn">
           Logout
